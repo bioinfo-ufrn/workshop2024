@@ -10,8 +10,7 @@
     <!-- Header -->
     <header>
         <div class="header-top">
-            <h1>Semana Portas Abertas</h1>
-            <h2>PPG Bioinfo UFRN 2024</h2>
+            <img src="header.jpeg" alt="Semana Portas Abertas - PPG Bioinfo UFRN 2024" class="header-image">
         </div>
         <nav class="header-nav">
             <ul>
@@ -30,33 +29,20 @@
         <!-- About Section -->
         <section id="sobre">
             <h2>Sobre o Evento</h2>
-            <p>Este evento explora as fronteiras da bioinformática e biologia computacional, proporcionando um espaço para aprendizado e networking.</p>
+            <p>Durante o período de 09 a 11 de dezembro de 2024, o Programa de Pós-Graduação em Bioinformática (PPg-Bioinfo) do Instituto Metrópole Digital (IMD) da Universidade Federal do Rio Grande do Norte (UFRN) estará realizando a Semana Portas Abertas do PPg-Bioinfo</p>
+            <br>
+            <p>O objetivo é convidar a comunidade interna e externa à UFRN a conhecer as nossas atividades de pesquisa e o nosso programa de pós-graduação, que tem tido bastante destaque no cenário da Bioinformática do Norte-Nordeste</p>
+            <br>
+            <p>A semana terá atividades abertas ao público por meio de minicursos e o VI Workshop do PPg-Bioinfo, onde os discentes do programa apresentarão os projetos e resultados preliminares das suas dissertações ou teses</p>
+            <br>
+            <p> Nestes 3 dias, teremos a visita de avaliadores externos à UFRN, como USP e UFMG e oferta de oficinas temáticas na área de TI e Bioinformática, direcionadas a comunidade interna e externa à UFRN para todos os níveis de ensino, conduzidas pelos discentes do programa</p>
         </section>
 
         <!-- Program Overview Section -->
         <section id="programa">
             <h2>Visão Geral do Programa</h2>
-            <div class="program-cards">
-                <div class="card">
-                    <h3>Minicursos</h3>
-                    <p>Sessões práticas sobre ferramentas e técnicas para bioinformática.</p>
-                </div>
-                <div class="card">
-                    <h3>Palestras</h3>
-                    <p>Palestras de especialistas sobre aplicações clínicas e biológicas da bioinformática.</p>
-                </div>
-                <div class="card">
-                    <h3>Mesa Redonda</h3>
-                    <p>Discussão sobre contribuições e descobertas recentes reconhecidas pelo Nobel.</p>
-                </div>
-                <div class="card">
-                    <h3>Flash Talks</h3>
-                    <p>Apresentações rápidas promovendo compartilhamento de ideias e networking.</p>
-                </div>
-                <div class="card">
-                    <h3>Pôsteres</h3>
-                    <p>Apresentação de pesquisas de estudantes e feedback da comunidade acadêmica.</p>
-                </div>
+            <div class="program-image">
+                <img src="programação.png" alt="Programação do evento" />
             </div>
         </section>
 
@@ -68,9 +54,8 @@
 
         <!-- Speakers Section -->
         <section id="palestrantes">
-            <h2>Palestrantes e Organizadores</h2>
-            <p>Conheça os palestrantes e organizadores do evento.</p>
-            <!-- Add speaker profiles here -->
+            <h2>Palestrantes</h2>
+            <p>Conheça os palestrantes do evento.</p>
         </section>
 
         <!-- Registration Section -->
@@ -84,7 +69,6 @@
         <section id="contato">
             <h2>Informações de Contato</h2>
             <p>Se tiver alguma dúvida, entre em contato conosco.</p>
-            <!-- Add contact form or details here -->
             <p>Email: contato@bioinfo.ufrn.br</p>
         </section>
     </main>
@@ -96,16 +80,6 @@
     </footer>
 
     <!-- Smooth Scrolling JavaScript -->
-    <script>
-        // Smooth scrolling for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

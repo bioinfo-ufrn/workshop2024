@@ -13,29 +13,33 @@ body {
 
 /* Header */
 header {
-    background: #004a7c; /* Dark blue background */
+    background: #004a7c; /* Fundo azul escuro */
     color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header fique acima de outros conteúdos */
 }
 
+/* Imagem no topo do header */
 .header-top {
+    width: 100%;
+    overflow: hidden;
+    background: #003366;
     text-align: center;
-    padding: 15px 0;
-    background: #003366; /* Slightly darker blue for separation */
 }
 
-.header-top h1 {
-    font-size: 2.5em;
-    margin: 0;
+.header-top .header-image {
+    width: 100%;
+    height: 100px; /* Altura fixa da imagem do header */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    display: block;
 }
 
-.header-top h2 {
-    font-size: 1.5em;
-    margin: 5px 0;
-    font-weight: normal;
-}
-
+/* Navegação fixa logo abaixo da imagem */
 .header-nav {
-    background: #0069a5; /* Lighter blue for the navigation bar */
+    background: #0069a5; /* Cor de fundo da barra de navegação */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
 }
 
 .header-nav ul {
@@ -44,6 +48,7 @@ header {
     list-style: none;
     padding: 10px 0;
     gap: 40px;
+    margin: 0;
 }
 
 .header-nav ul li a {
@@ -55,7 +60,12 @@ header {
 }
 
 .header-nav ul li a:hover {
-    color: #ffcc00; /* Yellow color on hover */
+    color: #ffcc00; /* Cor amarela no hover */
+}
+
+/* Compensação para o conteúdo */
+main {
+    margin-top: 160px; /* Compensa a altura total do header fixo (100px para imagem + 60px para navegação) */
 }
 
 /* Sections */
@@ -69,32 +79,17 @@ section {
 h2 {
     margin-bottom: 20px;
     font-size: 2em;
-    color: #004a7c; /* Dark blue color for section headings */
+    color: #004a7c;
 }
 
-.program-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.card {
-    padding: 20px;
+/* Estilo para a imagem na seção "Visão Geral do Programa" */
+.program-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-}
-
-.card h3 {
-    margin-bottom: 10px;
-    color: #333;
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -106,22 +101,18 @@ footer {
     font-size: 0.9em;
 }
 
-/* Responsive */
+/* Responsivo */
 @media (max-width: 768px) {
     .header-nav ul {
         flex-direction: column;
         gap: 15px;
     }
 
-    .program-cards {
-        grid-template-columns: 1fr;
+    .header-top .header-image {
+        height: 80px; /* Altura menor para telas pequenas */
     }
-
-    .header-top h1 {
-        font-size: 2em;
-    }
-
-    .header-top h2 {
-        font-size: 1.2em;
+    
+    h2 {
+        font-size: 1.8em;
     }
 }
