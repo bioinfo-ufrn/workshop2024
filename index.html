@@ -12,7 +12,14 @@
         <div class="header-top">
             <img src="header.jpeg" alt="Semana Portas Abertas - PPG Bioinfo UFRN 2024" class="header-image">
         </div>
-        <nav class="header-nav">
+
+        <!-- Botão de Menu Sanduíche (exibido em telas pequenas) -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- Menu de Navegação -->
+        <nav class="header-nav" id="navbar">
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#programa">Programa</a></li>
@@ -79,7 +86,12 @@
         <p>© 2024 PPG Bioinfo UFRN</p>
     </footer>
 
-    <!-- Smooth Scrolling JavaScript -->
-    <script src="script.js"></script>
+    <!-- JavaScript para o Menu Sanduíche -->
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
