@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana Portas Abertas - PPG Bioinfo UFRN 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <h1>Semana Portas Abertas</h1>
+            <h2>PPG Bioinfo UFRN 2024</h2>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#programa">Programa</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#palestrantes">Palestrantes</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="sobre">
+            <h2>Sobre o Evento</h2>
+            <p>Este evento explora as fronteiras da bioinformática e biologia computacional, proporcionando um espaço para aprendizado e networking.</p>
+        </section>
+
+        <!-- Program Overview Section -->
+        <section id="programa">
+            <h2>Visão Geral do Programa</h2>
+            <div class="program-cards">
+                <div class="card">
+                    <h3>Minicursos</h3>
+                    <p>Sessões práticas sobre ferramentas e técnicas para bioinformática.</p>
+                </div>
+                <div class="card">
+                    <h3>Palestras</h3>
+                    <p>Palestras de especialistas sobre aplicações clínicas e biológicas da bioinformática.</p>
+                </div>
+                <div class="card">
+                    <h3>Mesa Redonda</h3>
+                    <p>Discussão sobre contribuições e descobertas recentes reconhecidas pelo Nobel.</p>
+                </div>
+                <div class="card">
+                    <h3>Flash Talks</h3>
+                    <p>Apresentações rápidas promovendo compartilhamento de ideias e networking.</p>
+                </div>
+                <div class="card">
+                    <h3>Pôsteres</h3>
+                    <p>Apresentação de pesquisas de estudantes e feedback da comunidade acadêmica.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="agenda">
+            <h2>Agenda do Evento</h2>
+            <p>Detalhes sobre atividades e horários diários serão atualizados aqui.</p>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="palestrantes">
+            <h2>Palestrantes e Organizadores</h2>
+            <p>Conheça os palestrantes e organizadores do evento.</p>
+            <!-- Add speaker profiles here -->
+        </section>
+
+        <!-- Registration Section -->
+        <section id="inscricao">
+            <h2>Informações de Inscrição</h2>
+            <p>Detalhes sobre o processo de inscrição e links para se inscrever.</p>
+            <button onclick="window.location.href='https://example.com/register'">Inscreva-se Agora</button>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato">
+            <h2>Informações de Contato</h2>
+            <p>Se tiver alguma dúvida, entre em contato conosco.</p>
+            <!-- Add contact form or details here -->
+            <p>Email: contato@bioinfo.ufrn.br</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Organizado por UFRN | Metrópole Digital | BioME</p>
+        <p>© 2024 PPG Bioinfo UFRN</p>
+    </footer>
+
+    <!-- Smooth Scrolling JavaScript -->
+    <script>
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
