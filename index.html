@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana Portas Abertas - PPG Bioinfo UFRN 2024</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="header-top">
-            <img src="header.jpeg" alt="Semana Portas Abertas - PPG Bioinfo UFRN 2024" class="header-image">
+            <img src="./assets/header.jpeg" alt="Semana Portas Abertas - PPG Bioinfo UFRN 2024" class="header-image">
         </div>
 
-        <!-- Botão de Menu Sanduíche (exibido em telas pequenas) -->
+        <!-- Botão de Menu Sanduíche -->
         <div class="menu-toggle" onclick="toggleMenu()">
             ☰
         </div>
@@ -35,7 +36,7 @@
     <main>
         <!-- About Section -->
         <section id="sobre">
-            <h2>Sobre o Evento</h2>
+            <h2>Sobre a Semana de Portas Abertas</h2>
             <p>Durante o período de 09 a 11 de dezembro de 2024, o Programa de Pós-Graduação em Bioinformática (PPg-Bioinfo) do Instituto Metrópole Digital (IMD) da Universidade Federal do Rio Grande do Norte (UFRN) estará realizando a Semana Portas Abertas do PPg-Bioinfo</p>
             <br>
             <p>O objetivo é convidar a comunidade interna e externa à UFRN a conhecer as nossas atividades de pesquisa e o nosso programa de pós-graduação, que tem tido bastante destaque no cenário da Bioinformática do Norte-Nordeste</p>
@@ -47,22 +48,39 @@
 
         <!-- Program Overview Section -->
         <section id="programa">
-            <h2>Visão Geral do Programa</h2>
+            <h2>Visão Geral do Evento</h2>
             <div class="program-image">
-                <img src="programação.png" alt="Programação do evento" />
+                <img src="./assets/programação.png" alt="Programação do evento" />
             </div>
         </section>
 
-        <!-- Schedule Section -->
-        <section id="agenda">
-            <h2>Agenda do Evento</h2>
-            <p>Detalhes sobre atividades e horários diários serão atualizados aqui.</p>
+        <!-- Program Overview Section -->
+        <section id="programa">
+            <h2>Programação Detalhada</h2>
+            <div class="carousel">
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="./assets/1_carrossel-commpleto.png" alt="Imagem 1" class="carousel-slide">
+                    <img src="./assets/2_carrossel-commpleto.png" alt="Imagem 2" class="carousel-slide">
+                    <img src="./assets/3_carrossel-commpleto.png" alt="Imagem 3" class="carousel-slide">
+                    <img src="./assets/4_carrossel-commpleto.png" alt="Imagem 4" class="carousel-slide">
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
         </section>
 
-        <!-- Speakers Section -->
-        <section id="palestrantes">
-            <h2>Palestrantes</h2>
-            <p>Conheça os palestrantes do evento.</p>
+        <section id="minicursos">
+            <h2>Minicursos</h2>
+            <div class="minicursos-images">
+                <!-- Minicursos do Dia 1 -->
+                <img src="./assets/dia1_1.png" alt="Minicurso Dia 1 - Imagem 1">
+                <img src="./assets/dia1_2.png" alt="Minicurso Dia 1 - Imagem 2">
+        
+                <!-- Minicursos do Dia 2 -->
+                <img src="./assets/dia2_1.png" alt="Minicurso Dia 2 - Imagem 1">
+                <img src="./assets/dia2_2.png" alt="Minicurso Dia 2 - Imagem 2">
+                <img src="./assets/dia2_3.png" alt="Minicurso Dia 2 - Imagem 3">
+            </div>
         </section>
 
         <!-- Registration Section -->
