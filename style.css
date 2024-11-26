@@ -112,6 +112,7 @@ h2 {
     margin-bottom: 20px;
     font-size: 2em;
     color: #004a7c;
+    border-bottom: 1px solid #081295; /* Linha fina abaixo do título */
 }
 
 /* Estilo para imagem do programa */
